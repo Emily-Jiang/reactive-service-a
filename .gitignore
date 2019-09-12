@@ -1,0 +1,6 @@
+.classpath
+.gitignore.swp
+.project
+.settings/
+.vscode
+target/
