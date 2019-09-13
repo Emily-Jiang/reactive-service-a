@@ -16,4 +16,5 @@ public interface Service {
     String doSomething(@PathParam("parameter") String parameter);
 
 
+
 }

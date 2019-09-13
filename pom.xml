@@ -28,6 +28,21 @@
          <version>1.0</version>
     </dependency>
     <dependency>
+      <groupId>io.smallrye.reactive</groupId>
+      <artifactId>smallrye-reactive-messaging-provider</artifactId>
+      <version>1.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>io.smallrye.reactive</groupId>
+      <artifactId>smallrye-reactive-messaging-kafka</artifactId>
+      <version>1.0.3</version>
+    </dependency>
+    <dependency>
+      <groupId>io.smallrye.reactive</groupId>
+      <artifactId>smallrye-reactive-streams-operators</artifactId>
+      <version>1.0.9</version>
+    </dependency>
+    <dependency>
          <groupId>io.reactivex.rxjava2</groupId>
          <artifactId>rxjava</artifactId>
          <version>2.2.12</version>
@@ -104,8 +119,8 @@
                 <type>zip</type>
               </assemblyArtifact>-->
               <!-- Check out a daily build from open liberty https://openliberty.io/downloads/#development_builds and add to your local file system-->
-              
-              <assemblyArchive>/Users/emily/conferences/repo/openliberty-all-19.0.0.9-cl190920190827-1310.zip</assemblyArchive>
+
+              <!--<assemblyArchive>/Users/emily/conferences/repo/openliberty-all-19.0.0.9-cl190920190827-1310.zip</assemblyArchive>-->
               <configFile>src/main/liberty/config/server.xml</configFile>
               <appArchive>${project.build.directory}/${project.artifactId}.war</appArchive>
               <packageFile>${project.build.directory}/${project.artifactId}.jar</packageFile>
