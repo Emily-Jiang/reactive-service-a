@@ -93,7 +93,3 @@ A type safe invocation of HTTP rest endpoints. Specification [here](https://micr
 
 The example calls one endpoint from another JAX-RS resource where generated Rest Client is injected as CDI bean.
 
-# reactive-service-a
-# Interim requirement till 15th September
-In pom.xml, search for <assemblyArchive> and then do the interim actions as following: This will not be necessary next week
-Check out a daily build from open liberty https://openliberty.io/downloads/#development_builds and add to your local file system, update the file location according in assemblyArchive
