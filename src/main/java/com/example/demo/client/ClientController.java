@@ -34,7 +34,7 @@ public class ClientController {
 
     @GET
     @Path("/test/{parameter}")
-    @Timeout(300)
+    @Timeout(1000)
     @Asynchronous
     @Fallback(fallbackMethod = "myFallback")
     public CompletionStage<String> onClientSide(@PathParam("parameter") String parameter) {
