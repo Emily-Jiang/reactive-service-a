@@ -27,7 +27,7 @@
          <artifactId>microprofile-reactive-messaging-api</artifactId>
          <version>1.0</version>
     </dependency>
-    <dependency>
+    <!--<dependency>
       <groupId>io.smallrye.reactive</groupId>
       <artifactId>smallrye-reactive-messaging-provider</artifactId>
       <version>1.0.3</version>
@@ -41,7 +41,7 @@
       <groupId>io.smallrye.reactive</groupId>
       <artifactId>smallrye-reactive-streams-operators</artifactId>
       <version>1.0.9</version>
-    </dependency>
+    </dependency>-->
     <dependency>
          <groupId>io.reactivex.rxjava2</groupId>
          <artifactId>rxjava</artifactId>
