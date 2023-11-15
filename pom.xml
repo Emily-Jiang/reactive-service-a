@@ -10,14 +10,14 @@
     <openliberty.maven.version>3.1</openliberty.maven.version>
     <failOnMissingWebXml>false</failOnMissingWebXml>
     <openliberty.version>[19.0.0.9,)</openliberty.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
   <dependencies>
     <dependency>
       <groupId>org.eclipse.microprofile</groupId>
       <artifactId>microprofile</artifactId>
-      <version>3.0</version>
+      <version>6.1</version>
       <type>pom</type>
       <scope>provided</scope>
     </dependency>
@@ -51,7 +51,7 @@
     <dependency>
       <groupId>org.apache.kafka</groupId>
       <artifactId>kafka-clients</artifactId>
-      <version>2.3.0</version>
+      <version>3.6.0</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -73,7 +73,7 @@
     <dependency>
       <groupId>com.nimbusds</groupId>
       <artifactId>nimbus-jose-jwt</artifactId>
-      <version>5.7</version>
+      <version>9.37.1</version>
     </dependency>
     <dependency>
       <groupId>org.bouncycastle</groupId>
@@ -108,6 +108,12 @@
                 </goals>
                 <configuration>
                   <outputDirectory>target/wlp-package</outputDirectory>
+                  <runtimeArtifact>
+                    <groupId>io.openliberty.beta</groupId>
+                    <artifactId>openliberty-runtime</artifactId>
+                    <version>23.0.0.12-beta</version>
+                    <type>zip</type>
+                  </runtimeArtifact>
                 </configuration>
               </execution>
             </executions>
